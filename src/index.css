@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: #09090b;
+}
+#pizza {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ul li :hover {
+  color: #ffffff;
+}
+
+.navbar {
+  /* or absolute */
+  z-index: 1000; /* Adjust value as needed */
+  backdrop-filter: blur(4px);
+}
+.Web_name {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.food_head {
+  font-size: 4vw;
+}
+@media screen and (max-width: 1080px) {
+  .food_head {
+    padding-top: 3%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .food_head {
+    padding-top: 9%;
+  }
+  .meals {
+    padding-top: 5%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .food_head {
+    padding-top: 13%;
+    font-size: 5vw;
+  }
+  .meals {
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 722px) {
+  .log_panel {
+    font-size: 15px;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .log_panel {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .log_panel {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .log_panel {
+    font-size: 8px;
+  }
+  .nav_icons {
+    gap: 12px;
+  }
+  .Web_name {
+    font-size: 30px;
+  }
+  .navbar {
+  }
+}
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10%;
+}
+.meals img {
+  width: 100%;
+  height: 270px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+.card {
+  padding: 10px;
+  border-radius: 12px;
+}
+.Buttons {
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #fb2323;
+}
+.Buttons:active {
+  scale: 0.95;
+}
+.Buttons:hover {
+  background-color: #fe4545;
+}
+
+/* 
+About page CSS */
+
+.div {
+  padding-left: 5%;
+}
+.H1 {
+  color: #cc9917;
+  font-size: 50px;
+}
+.About_Content {
+  font-size: 20px;
+}
+.res_img {
+  width: 37vw;
+  height: 24vw;
+  border-radius: 20px;
+  position: relative;
+  left: 55%;
+}
+.li {
+  color: #fe4545;
+}
+.msg {
+  font-size: 30px;
+  color: aqua;
+}
+
+/* Contact page CSS */
+.contact_heading {
+  color: #fe4545;
+  font-size: 35px;
+  margin-top: 2%;
+}
+
+label {
+  color: #cc9917;
+  font-size: 25px;
+}
+
+.msg_btn {
+  background-color: red;
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+}
+.msg_btn:active {
+  scale: 0.96;
+}
+.msg_btn:hover {
+  background-color: rgb(255, 50, 50);
+}
+.buisness_dets {
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.buisness_dets p {
+  padding-bottom: 3%;
+  padding-top: 1%;
+  color: white;
+}
+
+.buisness_dets h3 {
+  color: #cc9917;
+  font-size: 25px;
+}
+.social {
+  color: rgb(176, 169, 169);
+  font-size: 30px;
+  display: flex;
+  gap: 20px;
+}
+.cart-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  width: 350px;
+  height: 100%;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-panel.open {
+  transform: translateX(0);
+}
+
+.cart-panel.closed {
+  transform: translateX(100%);
+}
