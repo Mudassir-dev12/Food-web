@@ -2,6 +2,7 @@ import { useContext, useMemo } from "react";
 import { FoodContext } from "../Context/FoodContext";
 import { RxCross2 } from "react-icons/rx";
 
+
 const CartPanel = () => {
   const { CartItem, isCartOpen, toggleCartPanel, removeFromCart } =
     useContext(FoodContext);
@@ -57,7 +58,7 @@ const CartPanel = () => {
                 className="text-red-400 text-sm"
                 onClick={() => removeFromCart(index)}
               >
-                Remove
+               <RxCross2 />
               </button>
             </div>
           ))
