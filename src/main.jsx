@@ -10,8 +10,8 @@ root.render(
   <React.StrictMode>
     <Context>
       <Auth0Provider
-        domain='YOUR_DOMAIN'
-        clientId='YOUR_CLIENT_ID'
+        domain='https://turbo-taste1.vercel.app/'
+        clientId='fB67lF9wH7e27fokhODdyhBfBbdxUZhx'
         authorizationParams={{
           redirect_uri: window.location.origin,
         }}
